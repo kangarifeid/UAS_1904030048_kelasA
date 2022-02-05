@@ -61,7 +61,7 @@
           <div class="col px-3">
             <form method="POST" action="">
               <div class="input-group mb-3">
-                <input type="text" id="keyword" name="keyword" class="form-control input-text" placeholder="Cari Produk ..." autocomplete="off" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                <input type="text" id="keyword" name="keyword" class="form-control input-text" placeholder="Cari Nama Pelanggan ..." autocomplete="off" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                 <div class="input-group-append">
                   <button class="btn btn-outline-warning btn-lg" type="submit" name="search"><i class="fa fa-search"></i></button>
                 </div>
