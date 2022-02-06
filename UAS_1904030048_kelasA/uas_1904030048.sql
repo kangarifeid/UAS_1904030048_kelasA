@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Feb 2022 pada 18.27
--- Versi server: 10.4.22-MariaDB
--- Versi PHP: 8.1.2
+-- Generation Time: Feb 06, 2022 at 07:19 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `db_pelanggan`
+-- Table structure for table `db_pelanggan`
 --
 
 CREATE TABLE `db_pelanggan` (
@@ -33,21 +33,24 @@ CREATE TABLE `db_pelanggan` (
   `nama_pelanggan` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
   `alamat` varchar(100) NOT NULL,
-  `no_hp` int(20) NOT NULL
+  `no_hp` int(20) NOT NULL,
+  `gambar_pelanggan` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `db_pelanggan`
+-- Dumping data for table `db_pelanggan`
 --
 
-INSERT INTO `db_pelanggan` (`id`, `kd_pelanggan`, `nama_pelanggan`, `email`, `alamat`, `no_hp`) VALUES
-(1, 123456, 'KANG ARIF', 'kangarif.id@gmail.com', 'TANGERANG', 812345678),
-(2, 123457, 'KANG AMIR', 'kangarif.eid@gmail.com', 'TANGERANG', 812345678);
+INSERT INTO `db_pelanggan` (`id`, `kd_pelanggan`, `nama_pelanggan`, `email`, `alamat`, `no_hp`, `gambar_pelanggan`) VALUES
+(1, 123456, 'KANG ARIF', 'kangarif.id@gmail.com', 'KRONJO', 812345678, 'foto1.png'),
+(2, 123457, 'KANG AMIR', 'kangarif.eid@gmail.com', 'KRONJO', 812345678, 'foto1.png'),
+(3, 123458, 'ALFINA', 'alfinadeelayanti01@gmail.com', 'KRONJO', 852138490, 'foto2.png'),
+(4, 123459, 'DEELAH', 'alfinadeelayanti1@gmail.com', 'KRONJO', 852138490, 'foto2.png');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `db_tokobuku`
+-- Table structure for table `db_tokobuku`
 --
 
 CREATE TABLE `db_tokobuku` (
@@ -56,29 +59,31 @@ CREATE TABLE `db_tokobuku` (
   `judul_buku` varchar(100) NOT NULL,
   `harga_buku` int(100) NOT NULL,
   `stok_buku` int(10) NOT NULL,
-  `gambar_buku` int(11) NOT NULL
+  `gambar_buku` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `db_tokobuku`
+-- Dumping data for table `db_tokobuku`
 --
 
 INSERT INTO `db_tokobuku` (`id`, `kd_buku`, `judul_buku`, `harga_buku`, `stok_buku`, `gambar_buku`) VALUES
-(1, 123456, 'BUKU EDUKASI', 150000, 15, 1),
-(2, 123457, 'BUKU BISNIS', 100000, 20, 2);
+(1, 123456, 'BUKU EDUCATE', 150000, 15, '1.png'),
+(2, 123457, 'BUKU STACKBOOK', 100000, 20, '2.png'),
+(3, 123458, 'BUKU ELECTBOOK', 200000, 15, '3.png'),
+(4, 123459, 'BUKU LIBRAIN', 150000, 25, '4.png');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `db_pelanggan`
+-- Indexes for table `db_pelanggan`
 --
 ALTER TABLE `db_pelanggan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `db_tokobuku`
+-- Indexes for table `db_tokobuku`
 --
 ALTER TABLE `db_tokobuku`
   ADD PRIMARY KEY (`id`);
