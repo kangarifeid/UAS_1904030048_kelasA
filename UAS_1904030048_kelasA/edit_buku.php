@@ -7,14 +7,14 @@
     if (edit($_POST) > 0) {
       echo "
       <script>
-        alert('Data Berhasil Diedit..!');
+        alert('Data Berhasil di Edit..!');
         document.location.href='detail_buku.php'
         </script>
         ";
     } else {
       echo "
       <script>
-        alert('Data Gagal Diedit..!');
+        alert('Data Gagal di Edit..!');
         </script>
         ";
     }
@@ -76,24 +76,24 @@
             <form method="POST" action="">
               <input type="hidden" class="form-control" value="<?= $buku['id'] ?>" name="id">
               <div class="form-group">
-                <label for="kd_buku">Kode Buku : </label>
+                <label for="kd_buku" class="form-label mt-2">Kode Buku : </label>
                 <input type="text" class="form-control" id="kd_buku" value="<?= $buku['kd_buku'] ?>" placeholder="Kode Buku" name="kd_buku" autofocus required autocomplete="off">
               </div>
               <div class="form-group">
-                <label for="judul_buku">Judul Buku : </label>
+                <label for="judul_buku" class="form-label mt-2">Judul Buku : </label>
                 <input type="text" class="form-control" id="judul_buku" value="<?= $buku['judul_buku'] ?>" placeholder="Judul Buku" name="judul_buku" required autocomplete="off">
               </div>
               <div class="form-group">
-                <label for="harga_buku">Harga Buku : </label>
+                <label for="harga_buku" class="form-label mt-2">Harga Buku : </label>
                 <input type="text" class="form-control" id="harga_buku" value="<?= $buku['harga_buku'] ?>" placeholder="Harga Buku" name="harga_buku" required autocomplete="off">
               </div>
               <div class="form-group">
-                <label for="stok_buku">Stok Buku : </label>
+                <label for="stok_buku" class="form-label mt-2">Stok Buku : </label>
                 <input type="text" class="form-control" id="stok_buku" value="<?= $buku['stok_buku'] ?>" placeholder="Stok Buku" name="stok_buku" required autocomplete="off">
               </div>
               <div class="form-group">
-                <label for="gambar_buku">Gambar Buku : </label>
-                <input type="text" class="form-control" id="gambar_buku" value="<?= $buku['gambar_buku'] ?>" placeholder="Gambar Buku" name="gambar_buku" required autocomplete="off">
+                <label for="gambar_buku" class="form-label mt-2">Upload Image :</label>
+                <input class="form-control" type="file" id="gambar_buku" value="<?= $buku['gambar_buku'] ?>" placeholder="Gambar Buku" name="gambar_buku" required autocomplete="off">
               </div>
               <button type="tambah" class="btn btn-warning mt-3" name="edit">Simpan</button>
               <a href="detail_buku.php" class="btn btn-info mt-3" role="button">Kembali</a>

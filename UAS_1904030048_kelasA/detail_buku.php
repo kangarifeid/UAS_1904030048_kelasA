@@ -64,7 +64,7 @@
 
       <ul class="list-group">
         <li class="list-group-item active"></li>
-        <li class="list-group-item"><img class="rounded-circle" src="buku/1.png" <?php echo $buku['gambar_buku']; ?>"
+        <li class="list-group-item"><img class="rounded-circle" src="buku/<?php echo $buku['gambar_buku']; ?>"
             width="250px"></li>
         <li class="list-group-item">Kode Buku : <?= $buku['kd_buku']; ?></li>
         <li class="list-group-item">Judul Buku : <?= $buku['judul_buku']; ?></li>

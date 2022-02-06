@@ -100,7 +100,7 @@
                   <td><?php echo $bukuu['judul_buku']; ?></td>
                   <td><?php echo $bukuu['harga_buku']; ?></td>
                   <td><?php echo $bukuu['stok_buku']; ?></td>
-                  <td><img src="buku/1.png" <?php echo $bukuu['gambar_buku']; ?>" width="70px"></td>
+                  <td><img src="buku/<?php echo $bukuu['gambar_buku']; ?>" width="70px"></td>
                   <td><a href="detail_buku.php?id=<?= $bukuu['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
                 </tr>
                 <?php $no++ ?>

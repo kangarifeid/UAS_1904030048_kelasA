@@ -79,6 +79,7 @@
               <th scope="col">Email</th>
               <th scope="col">Alamat</th>
               <th scope="col">Nomor Hp</th>
+              <th scope="col">Foto Pelanggan</th>
               <th scope="col">Opsi</th>
             </tr>
           </thead>
@@ -101,6 +102,7 @@
                   <td><?php echo $pelanggann['email']; ?></td>
                   <td><?php echo $pelanggann['alamat']; ?></td>
                   <td><?php echo $pelanggann['no_hp']; ?></td>
+                  <td><img class="rounded-circle" src="image/<?php echo $pelanggann['gambar_pelanggan']; ?>" width="70px"></td>
                   <td><a href="detail_pelanggan.php?id=<?= $pelanggann['id']; ?>" class="btn btn-warning" role="button">Detail</a></td>
                 </tr>
                 <?php $no++ ?>

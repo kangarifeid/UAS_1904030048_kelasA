@@ -61,7 +61,7 @@
 
         <ul class="list-group">
           <li class="list-group-item active"></li>
-          <li class="list-group-item"><img class="rounded-circle" src="image/foto1.png" width="250px"></li>
+          <li class="list-group-item"><img class="rounded-circle" src="image/<?php echo $pelanggan['gambar_pelanggan']; ?>"" width="250px"></li>
           <li class="list-group-item">Kode Pelanggan : <?= $pelanggan['kd_pelanggan']; ?></li>
           <li class="list-group-item">Nama Pelanggan : <?= $pelanggan['nama_pelanggan']; ?></li>
           <li class="list-group-item">Email : <?= $pelanggan['email']; ?></li>
